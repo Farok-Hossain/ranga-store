@@ -16,7 +16,7 @@ const showProducts = async (products) => {
         div.innerHTML = `
         
       <div class="card trans-card">
-          <div class="card-body bg-light">
+          <div class="card-body">
               <div>
                   <img src="${product.hasOwnProperty('image') && product.image}" class="card-img-top w-50 mx-auto p-3" style="height: 200px;">
               </div>
