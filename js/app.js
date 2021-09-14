@@ -16,7 +16,7 @@ const showProducts = async (products) => {
         div.innerHTML = `
         
       <div class="card trans-card">
-          <div class="card-body">
+          <div class="card-body bg-light">
               <div>
                   <img src="${product.hasOwnProperty('image') && product.image}" class="card-img-top w-50 mx-auto p-3" style="height: 200px;">
               </div>
@@ -26,7 +26,7 @@ const showProducts = async (products) => {
     
               <div class="d-flex justify-content-between">
                 <p>Rating: ${product.hasOwnProperty('rating') && product.rating && product.rating.rate}</p>
-                <p>${product.hasOwnProperty('rating') && product.rating && product.rating.count} ratings</p>
+                <p>RatingCount: ${product.hasOwnProperty('rating') && product.rating && product.rating.count}</p>
               </div>
 
               <h6>Price: $ ${product.hasOwnProperty('price') && product.category && product.price}</h6>
